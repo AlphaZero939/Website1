@@ -11,7 +11,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 lottie_coding = load_lottieurl("https://lottie.host/a46363a5-a123-4a0e-917a-3daf035a0a09/XLBe6YSBDY.json")
-lottie_pics = Image.open("images\WTF.jpg")
+#lottie_pics = Image.open("images\WTF.jpg")
 
 
 
@@ -52,7 +52,7 @@ else:
         with left_column:
             st.header("This is left!")
             st.lottie(lottie_coding, height=300, width=500, key="coding", speed=1, loop=True)
-            st.image(lottie_pics, width=500, )
+            #st.image(lottie_pics, width=500, )
         with right_column:
             st.header("This is right!")
             st.write("This is below right!")
